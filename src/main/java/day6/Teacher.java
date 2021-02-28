@@ -19,7 +19,7 @@ public class Teacher {
         return subject;
     }
 
-    public String evaluate(Student myStudent) {
+    public void evaluate(Student myStudent) {
         int rating;
         String appraisal;
         Random random = new Random();
@@ -37,6 +37,7 @@ public class Teacher {
             default:
                 appraisal = "отлично";
         }
-        return appraisal;
+        System.out.println("Преподаватель " + name + " оценил студента с именем " + myStudent.getName()
+                + " по предмету " + subject + " на оценку " + appraisal);
     }
 }
