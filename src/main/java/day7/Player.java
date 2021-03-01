@@ -9,12 +9,9 @@ public class Player {
     public static int countPlayers = 0;
 
     public Player (int stamina) {
+        this.stamina = stamina;
         if (countPlayers < 6) {
-            this.stamina = stamina;
             countPlayers++;
-        }
-        else {
-            this.stamina = stamina;
         }
     }
 
